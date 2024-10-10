@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-family: "Comic-sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #fcd2e0;
+}
+
+/* Header */
+header {
+  background-color: #668b00;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 4px solid #83260a;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  font-weight: 650;
+  letter-spacing: 2px;
+  color: #fdb8cf;
+}
+
+/* nav */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 12px 25px;
+  background-color: #f6f882;
+  color: #d11352;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #faaa5f;
+}
+
+/* portfolio */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.video-card {
+  width: 300px;
+  background-color: #f1e5ad;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+h3 {
+  padding: 15px;
+  color: #044c72;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #630f00;
+  color: #f7c5d6;
+  margin-top: auto;
+}
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    overflow-y: auto;
+  }
+
+  nav ul li {
+    flex: 1;
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 15px 0;
+    background-color: #0b2933;
+    color: #47071d;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    background-color: #ffad33;
+  }
+
+  .video-card {
+    width: 90%;
+  }
+}
